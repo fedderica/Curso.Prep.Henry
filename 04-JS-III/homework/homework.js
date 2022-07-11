@@ -3,26 +3,38 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  return array [0]  //[j,k,o] ] 3
+                    
+
 }
-
-
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
-  // Tu código:
+  // Tu código: 
+
+  return array [array.lenght -1];
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
-  // Tu código:
+  // Tu código: 
+  return  array.lenght; 
+ 
+
 }
 
 
 function incrementarPorUno(array) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Aumenta cada entero por 1
-  // y devuelve el array
-  // Tu código:
+  // y devuelve el array 
+  // Tu código:  
+  var nuevoarray = [];
+  for (let i  = 0; i  < array.length; i++ ) {
+    nuevoarray[i] = array [i] + 1;
+    return nuevoarray
+
+  }
 }
 
 
@@ -30,6 +42,10 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  array[array.lenght] = elemento;
+  return array;
+
+
 }
 
 
@@ -38,6 +54,9 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  array.unshift (elemento);
+  return array;
+
 }
 
 
@@ -47,20 +66,32 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  return palabras.join ('');
+
+
 }
 
 
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
-  // Tu código:
-}
+  // Tu código:  
+  for(var i = 0; i < array.lenght;  i++ ) { // [ 1, 2 , 3 , 4 , 5 , 6 , 7 ]
 
+  if  ( array[i]  === elemento ) return true; 
+  return false }
+}
 
 function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
-  // Tu código:
+  // Tu código: 
+    var acc = 0;
+    for (var i = 0; i < numeros.lenght; i ++)
+     acc += numeros [i];
+     return acc; 
+
+
 }
 
 
@@ -68,44 +99,73 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+
+ var sumaTotal = 0;
+ var numeroTest = restultadosTest.lenght;
+ for (var i = 0; i < resultadosTest.lenght; i ++)
+ sumaTotal += resultadosTest [i]
+ var promedio = sumaTotal / numeroTest;
+ return promedio;
 }
-
-
 function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-}
 
+ var acc = 0;    // [1 , 2 , 3 , 4 , 5 , 6 , 7 , 7 ]
+for  (let i = 0 ; i < numeros.lenght; i ++)
+if (numeros[i] > acc)
+acc = numeros[i];
+return acc;
+}
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+ var product = 1;
+if (multiplicarArgumentos.length === 0) return 0;
+else
+for (let i = 0; i < arguments.length; i++) {
+   producto *= arguments [i] 
+   return producto;
 }
 
+  
+}
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
 
-}
 
+var acc = 0 ;
+for (let i = 0; i < array.length; i++) {
+  if (arreglo [i] > 18)
+  acc = acc + 1;
+  
+}  
+}
 
 function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  
-} 
+ if (numeroDeDia === 1 || numeroDeDia === 7 )
+ return "Es Fin De Semana";
+ return "Es Dia Laboral";
+}
 
 
 function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  
+   let numero = n.toString();
+   let primeNum = numero.split("");
+ if(primeNum[0] === "9") return true;
+return false;
 }
 
 
@@ -113,7 +173,9 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  
+   let igual = arreglo.every((e) => e === arreglo [0]);
+   return igual;
+
 } 
 
 
@@ -122,16 +184,27 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-}
 
+ console.log(array);
+ let meses = array.filter(
+ (e) => e === "Enero"||e === "Marzo" || e === "Noviembre"
+ )
+ if (meses.length < 3) return "No se encontraron los meses perdidos"
+ return meses;
+}
 
 function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+
+let newArray=[]
+for (let i = 0 ;i< array.lenght; i++) {
+if (array [i] > 100)
+newArray.push(array[i]) }
+return newArray
+
 }
-
-
 function breakStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
   //Guardar cada nuevo valor en un array. 
@@ -140,8 +213,10 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-}
 
+for (let index = 2; index < array.length; index++) 
+  element = array[index];
+}
 
 function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
