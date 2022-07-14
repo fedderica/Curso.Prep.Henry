@@ -4,7 +4,7 @@
 const nuevaString = 'Hola' ;
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = 9 ;
+const nuevoNum = 4 ;
 // Crea una variable booleana:
 const nuevoBool =  true ;
 
@@ -15,7 +15,7 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === null;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -106,7 +106,7 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num<50)
+  if (num>50)
   return true
   else
   return false
@@ -117,7 +117,7 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  return x % y 
+  return x % y ;
 
 }
 
@@ -125,30 +125,30 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num == num%2== 0) 
-  return true;
-  else
-  return false;
-
-
-  
+ if( num % 2 === 0) {
+ return true;
+  } else {
+ return false;
+  }
 }
+
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if   (num === 1)
-  return true
-  else
-  return false
+  if(num % 2 === 1) {
+  return true;
+  } else {
+  return false;
+  }
 }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  returnMath.pow(num,2)
+  return Math.pow(num,2)
 
 }
 
@@ -180,7 +180,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.random
+  return Math.random();
 
 }
 
