@@ -1,0 +1,36 @@
+
+
+	* Variables
+	* Strings
+	* Funciones (argumentos, `return`)
+	* Declaraciones `if`
+	* Valores booleanos (`true`, `false`)
+
+    Variables: Podrían definirse como cajitas donde puedo guardar algo dentro para utilizar despues
+    Ej:
+    var cajita = semillas ; 
+    En esta variable llamada cajita guarde semillas
+
+    Strings: Seran textos que encerraremos en comillas. "string"  o "Todo esto es una cadena de strings"
+    
+
+    Funciones: Las utilizaremos para realizar algo 
+    Podremos asignarle argumentos para realizar algo con ciertas pautas 
+    Y podremos agregarle return para que lo que realizamos nos devuelva un resultado 
+
+    Funcion nombreFuncion() {}
+    funcion nombreFuncion (Argumento, Ira, Acá)
+      {var suma = argumento+ira+aca;
+       return suma; 
+       
+       devolverasumadelosarg }    
+
+
+    Declaraciones: IF 
+    Serán condiciones que tendran que cumplirse o no para decirnos si lo que estamos haciendo es Verdadero o Falso
+
+    Ej 
+    IF (si)
+    else if  (Sino)
+    Return true; (nos devolvera el resultado )
+    Return false; Sino  (devolvera falso)
