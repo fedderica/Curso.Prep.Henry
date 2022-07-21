@@ -36,7 +36,7 @@ function suma(x, y) {
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
   
-  return (x + y );
+  return (x + y);
 
 }
 
@@ -170,6 +170,7 @@ function redondearNumero(num) {
   // Tu código:
  return Math.round(num) 
 }
+  
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
@@ -184,7 +185,7 @@ function numeroRandom() {
 
 }
 
-function esPositivo(numero) {
+function esPositivo(numero) { 
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
@@ -193,7 +194,7 @@ function esPositivo(numero) {
   return "Es positivo"
   else if (numero<0)
   return "Es negativo"
-  else (numero==0)
+  else (numero===0)
   return false
 
 }
@@ -219,7 +220,7 @@ function obtenerSaludo(nombre) {
   return "Hola " + nombre + "!"
 }
 
-function obtenerAreaRectangulo(alto, ancho) {
+function obtenerAreaRectangulo(alto, ancho) { 
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
   return alto * ancho 
@@ -228,7 +229,7 @@ function obtenerAreaRectangulo(alto, ancho) {
 }
 
 
-function retornarPerimetro(lado){
+function retornarPerimetro(lado){  
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
   return lado * 4
@@ -243,16 +244,16 @@ function areaDelTriangulo(base, altura){
 }
 
 
-function deEuroAdolar(euro){
+function deEuroAdolar(euro){ 
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  let dolar = 1.20;
+  var dolar = 1.20;
   return euro * dolar;
 }
 
 
-function esVocal(letra){
+function esVocal(letra){  
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
   //Verificar si el usuario ingresó un string de más de un carácter, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".

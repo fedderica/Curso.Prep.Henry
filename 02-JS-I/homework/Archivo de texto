@@ -15,7 +15,7 @@
     
 
     Funciones: Las utilizaremos para realizar algo 
-    Podremos asignarle argumentos para realizar algo con ciertas pautas 
+    Podremos asignarle argumentos para realizar algo con ciertas pautass 
     Y podremos agregarle return para que lo que realizamos nos devuelva un resultado 
 
     Funcion nombreFuncion() {}
@@ -31,6 +31,7 @@
 
     Ej 
     IF (si)
-    else if  (Sino)
+    else 
+      (Sino)
     Return true; (nos devolvera el resultado )
     Return false; Sino  (devolvera falso)
