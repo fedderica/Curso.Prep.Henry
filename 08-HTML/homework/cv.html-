@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<title>Curriculum de Federica</title>
+<link =  rel=style="stylesheet" href="cv.html" />
+<style> 
+</style>
+<body> 
+ <div>
+         <h1>Hola! Me llamo Federica, soy de la ciudad de La Plata, tengo 22 años y estudio programación</h1>
+         <h2>Estudie en la Universidad de Bellas Artes y luego conocí Henrry </h2>
+         <h3>He trabajado en Atención al publico </h3> 
+         <h4> Me gusta muchisimo la fotografía, edición y arte en todo lo que realizo </h4>
+         <div class="divClass">
+         <span id="spanId"> Aquí estoy yo 
+        <img src =  https://avatars.githubusercontent.com/u/101526244?s=400&u=b4ae2cd75871f4d92b13daf4a6f67e5ae86d31aa&v=4 </span>
+          <h5> Mis hobbies son tocar la guitarra, realizar actividad fisica (de todo tipo) y yoga </h5>
+        </div>
+
+        <div>
+        <p> Me encantó la propuesta de Henrry porque me dedicaba al arte de forma manual, fui encontrando opciones de crear paginas, realizar codigos e incoporar 
+         algo totalmente nuevo en mi vida, es innovador y sin duda que el futuro. Espero poder avanzar y generar contenido estupendo! </p> </div>
+         </body>
+         
+</html>

@@ -32,9 +32,11 @@ function invocarMetodo(objeto, metodo) {
   // "metodo" es una cadena que contiene el nombre de un método (funcion) en el objeto
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
-  // Tu código: var cadena  = metodo;
- // objeto [cadena]( );
+  // Tu código:
+   var cadena  = metodo;
+   objeto [cadena]( );
 
+ 
 }
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
@@ -51,7 +53,6 @@ function eliminarPropiedad(objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código: 
-  
   delete objeto [unaPropiedad];
   return objeto;
 }
@@ -120,8 +121,8 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Devuelve el objeto "usuario"
   // // Tu código:
 
-  usuario.amigo.push 
-  (nuevoAmigo);
+  usuario.amigos.push(nuevoAmigo);
+
   return usuario;
 }
 
@@ -129,16 +130,6 @@ function pasarUsuarioAPremium(usuarios) {
   // "usuarios" es un array de objetos "usuario"
   // Cada objeto "usuario" tiene la propiedad "esPremium"
   // Define cada propiedad "esPremium" de cada objeto como "true"
-  // Devuelve el array de usuarios
-  // Tu código:
-  for (var i = 0; i < usuarios.length; i++) {
-  usuarios [i].esPremium = true;
- }
-  return usuarios;
-
-}
-
-function sumarLikesDeUsuario(usuario) {
   // "usuario" tiene una propiedad llamada "posts" que es un array
   // "posts" es un array de objetos "post"
   // Cada objeto "post" tiene una propiedad llamada "likes" que es un entero (int/integer)
